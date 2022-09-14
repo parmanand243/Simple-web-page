@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  /* top: 0;
+  position: sticky; */
+}
+/* ############### nav bar ###############*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: rgba(72, 69, 69, 0.5);
+  backdrop-filter: blur(4px);
+  height: 10vh;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.logo {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+.tour {
+  color: aqua;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 2px white;
+}
+
+nav ul {
+  padding-top: 18px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 17px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding-top: 100px;
+  transition: 0.4s;
+}
+li a:hover {
+  color: rgb(58, 254, 189);
+  font-size: 30px;
+}
+
+.icon-menu i {
+  color: white;
+  font-size: 25px;
+  margin: 0 10px;
+  padding: 11px;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.icon-menu i:hover {
+  background-color: aqua;
+  color: rgb(8, 8, 8);
+}
+
+/* #####################context section################### */
+.context {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/travel7.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 5rem;
+}
+
+.container2 {
+  padding: 5rem;
+  height: 500px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+.context h1 {
+  margin-top: 60px;
+}
+span {
+  color: aqua;
+}
+.context .row .explore button {
+  width: 250px;
+  height: 30px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  /* box-shadow: 0px 1px gray; */
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #009688;
+}
+.explore button span {
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+button :hover {
+  border: none;
+}
+/* ##########destination#################### */
+.destination {
+  padding: 3rem;
+  text-align: center;
+  background-color: rgb(245, 242, 242);
+}
+.container3 {
+  padding: 3rem;
+}
+.feature-img img {
+  width: 100%;
+  height: 25vh;
+
+  cursor: pointer;
+  /* transition: 0.5s; */
+}
+/* .feature-img img:hover {
+  transform: scale(1.1);
+} */
+
+.price {
+  text-align: left;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(246, 109, 59);
+  border-radius: 50%;
+  padding: 13px 5px 9px 12px;
+  box-shadow: 0 0 10px;
+  position: absolute;
+}
+.feature-img {
+  position: relative;
+}
+.rating {
+  margin-top: -25px;
+  background-color: white;
+  position: absolute;
+  margin-left: 195px;
+}
+.ftext {
+  margin-top: 43px;
+}
+.ftext p {
+  font-weight: bold;
+}
+.feature-box {
+  box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+}
+
+/* #############Gallery########## */
+
+.container7 {
+  padding: 4rem;
+  width: 100%;
+  height: 80vh;
+  border: 2px soid red;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/pic9.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.gal {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.container7 .row img {
+  cursor: pointer;
+  transition: 0.4sec;
+}
+.container7 .row img:hover {
+  transform: scale(1.1);
+}
+/* 3##############  reviw ################*/
+.users-feedback {
+  width: 100%;
+  height: 70vh;
+  padding: 4rem;
+
+  background-color: rgb(227, 223, 223);
+}
+.users-feedback h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+}
+.container8 {
+  padding: 3rem;
+}
+.user-review {
+  text-align: center;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 100, 0.2);
+  padding-bottom: 30px;
+}
+.user-review p {
+  padding: 30px 10px 10px 10px;
+}
+.users-feedback img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: relative;
+  margin: -30px 0 20px 43%;
+}
+/* ###############form############### */
+/* .footer {
+  width: 100%;
+  color: white;
+
+  padding: 3rem;
+  height: 50vh;
+  background: linear-gradient(#2d557d, #9610fd);
+} */
+
+.container6 {
+  padding: 2rem;
+}
+.container6 .row .form {
+  padding: 0rem 3rem 3rem 3rem;
+}
+.forhead {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 9px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* ############footer############## */
+.container4 {
+  width: 100%;
+  padding: 3rem;
+  background: linear-gradient(#2d557d, #9610fd);
+  color: white;
+
+  justify-content: space-between;
+}
+.footer h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.footer i {
+  padding-right: 10px;
+}
+.footer p {
+  text-align: center;
+  cursor: pointer;
+}
+.footer p a {
+  color: white;
+  text-decoration: none;
+}
+.footer hr {
+  margin-top: 20px;
+  color: rgb(252, 251, 251);
+}
+.copy {
+  margin-bottom: -50px;
+}
